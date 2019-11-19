@@ -1,0 +1,12 @@
+#ifndef PEDIDO_H_
+#define PEDIDO_H_
+
+typedef struct
+{
+
+
+
+}Recoleccion;
+
+
+#endif /* PEDIDO_H_ */

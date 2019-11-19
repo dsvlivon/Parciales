@@ -1,0 +1,68 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "cliente.h"
+
+
+
+/**
+ * \brief Inicializa el status en un array de empleados
+ * \param list Es el array en el cual buscar
+ * \param len Indica la logitud del array
+ * \param value Es el valor que se asignara a isEmpty
+ * \return -
+ *
+ */
+void initCliente(Cliente list[], int len,int value)
+{
+    int i;
+    for(i=0;i < len; i++)
+    {
+        list[i].isEmpty = value;
+    }
+}
+
+
+/**
+ * \brief Busca el primer lugar no utilizado en el array
+ * \param list Es el array en el cual buscar
+ * \param len Indica la logitud del array
+ * \return Si no hay lugares libres (-1) y si la hay la posicion del mismo (i)
+ *
+ */
+int buscarLugarLibre(Cliente list[],int len)
+{
+    int i;
+    for(i=0;i < len; i++)
+    {
+        if(list[i].isEmpty == 0)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+/**
+ * \brief Busca la primer ocurrencia de un empleado mediante su id
+ * \param list Es el array en el cual buscar
+ * \param len Indica la logitud del array
+ * \param code Es el valor que se busca
+ * \return Si no hay ocurrencia (-1) y si la hay la posicion de la misma (i)
+ *
+ */
+int buscarId(Cliente list[],int len,int code)
+{
+    int i;
+    for(i=0;i < len; i++)
+    {
+        if(list[i].id == code && list[i].isEmpty == 1)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+

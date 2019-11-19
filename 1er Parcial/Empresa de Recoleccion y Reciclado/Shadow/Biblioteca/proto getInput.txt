@@ -1,0 +1,501 @@
+﻿#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+
+/*
+a)	getInt	    0)	isNumeric
+b)	getFloat	1)	isDecimal
+c)	getChar	    2)	isLetter
+                3)	isAlphaNumeric
+                4)	isTelephone
+                5)	isDni
+                6)	isCuitCuil
+auxReturn = functionX(&capSpace, "msg", "msgFail", min, max, try, mode);
+
+*/
+
+int main(void)
+{
+	char aux[50];
+	char name [35], adress[50];
+	int age, id, salary, dnu;
+	int retorno=0;
+    //francisco sebastian adalberto = 29
+    //TESTEO PARA OBTENER UN LEGAJO
+	retorno = getInput(aux, "Ingrese numero de legajo: ","\nIngreso invalido!",0,9,2,0);
+	if(retorno == 0)
+    {
+        id = atoi(aux);
+        printf("\nEl legajo validado es: %d: ", id);
+        printf("\nRetorno es: %d: ", retorno);
+    }
+    //TESTEO PARA OBTENER UNA EDAD
+	retorno = getInput(aux, "Ingrese la edad: ","\nIngreso nvalido!",0,100,2,1);
+	if(retorno == 0)
+    {
+        age = atoi(aux);
+        printf("\nLa edad validada es: %d\n", age);
+        printf("\nRetorno es: %d: ", retorno);
+    }
+    //TESTEO PARA OBTENER UN DNU
+	retorno = getInput(aux, "Ingrese numero de DNU: ","\nIngreso invalido!",1000000,99999999,2,0);
+	if(retorno == 0)
+    {
+        dnu = atoi(aux);
+        printf("\nEl DNU validado es: %d: ", dnu);
+        printf("\nRetorno es: %d: ", retorno);
+    }
+	//TESTEO PARA OBTENER UN SUELDO
+	retorno = getInput(aux, "Ingrese el sueldo: ","\nIngreso invalido!",0,199000,2,0);
+	if(retorno == 0)
+    {
+        salary = atoi(aux);
+        printf("\nEl sueldo validado es: %c\n", salary);
+    }
+	//TESTEO PARA OBTENER UN NOMBRE
+	/*retorno = getInput(aux, "Ingrese un nombre: ","\nIngreso nvalido!",0,100,2,2);
+	if(retorno == 0)
+    {
+        strcpy(name, aux);
+        printf("\nEl nombre validado es: %s%s\n",aux, name);
+    }
+
+    //TESTEO PARA OBTENER UNA DIRECCION
+	retorno = getInput(&aux, "Ingrese la direccion: ","\nIngreso invalido!",0,100,2,3);
+	if(retorno == 0)
+    {
+        adress = strcpy(aux);
+        printf("\nLa direccion validada es: %c\n", adress);
+    }
+    */
+
+    printf("\nFIN DE LA FUNCION.");
+	return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+
+
+utn.c
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+
+/*
+a)	getInt	    x)	isNumeric
+b)	getFloat	y)	isDecimal
+c)	getChar	    0)	isLetter / 1) isAlphaNumeric / 2)	isTelephone / 3) isDni / 4)	isCuitCuil
+
+auxReturn = functionX(&capSpace, "msg", "msgFail", min, max, try, mode);
+*/
+
+int getInt(int *pResult ,char *pMsg,char *pMsgFail,int min,int max, int try){
+	int auxReturn = -1;
+	int buffer, j, length;
+	char input[50];
+
+	if(pResult!= NULL || (max>min) || try>0 )
+	{
+		printf("%s",pMsg);
+		for(j=0;j<try;j++)
+		{
+			fgets(input, sizeof(input), stdin);
+			length=strlen(input);
+			auxReturn = isNumeric(input, length);
+            if(auxReturn == 0)
+            {
+                buffer = atoi(input);
+
+                if(buffer >= min && buffer <= max)
+                {
+                    *pResult = buffer;
+                    break;
+                }
+            }
+            else
+            {
+                printf("%s",pMsgFail);
+                printf("\n%s",pMsg);
+                auxReturn = -1;
+            }
+        }
+        if(auxReturn!=0)
+        {
+            printf("Sin Reintentos.");
+        }
+    }
+	return auxReturn;
+}
+/////////////////////////////////////////////////////////////////////////////////////
+int getFloat(float *pResult, char *pMsg, char *pMsgFail, int min, int max, int try){
+	int auxReturn = 0;
+	float buffer;
+	int j, length;
+	char input[50];
+
+	if(pResult!= NULL || (max>min) || try>0 )
+	{
+		printf("%s",pMsg);
+		for(j=0;j<try;j++)
+		{
+			fgets(input, sizeof(input), stdin);
+			length=strlen(input);
+            auxReturn = isDecimal(input, length);
+            printf(" input X%s: ",input);
+            if(auxReturn == 0)
+            {
+                buffer = atof(input);
+
+                if(buffer >= min && buffer <= max)
+                {
+                    *pResult = buffer;
+                    break;
+                }
+            }
+            else
+            {
+                printf("%s",pMsgFail);
+                printf("\n%s",pMsg);
+            }
+        }
+        if(auxReturn!=0)
+        {
+            printf("Sin Reintentos.");
+        }
+    }
+	return auxReturn;
+}
+//////////////////////////////////////////////////////////////////////////////////
+int getInput(char *pResult, char *pMsg, char *pMsgFail, int min, int max, int try, int mode){
+    int auxReturn = -1;
+	char buffer=0;
+	int j, length;
+	char input[50];
+
+	if(pResult!= NULL || (max>min) || try>0 )
+	{
+        printf("%s", pMsg);
+		for(j=0;j<try;j++)
+		{
+            fgets (input, sizeof(input), stdin);
+           	length=strlen(input);
+
+			switch (mode)
+			{
+			    case 0:
+                auxReturn = isNumeric(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+			    case 1:
+                auxReturn = isDecimal(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 2:
+                auxReturn = isLetter(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 3:
+                auxReturn = isAlphaNumeric(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 4:
+                auxReturn = isTelephone(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 5:
+                auxReturn = isDni(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 6:
+                auxReturn = isCuitCuil(input, length);
+                printf("\nauxReturn: %d", auxReturn);
+                break;
+                case 7:
+                printf("Empty request");
+                break;
+                case 8:
+                printf("Empty request");
+                break;
+                case 9:
+                printf("Empty request");
+                break;
+                default:
+                printf("invalid request");
+                break;
+            }
+            if(auxReturn == 0 && mode <= 1 && mode >= 0)
+            {
+                if(buffer >= min && buffer <= max)
+                {
+                    strcpy(pResult, input);
+                    printf("\nRetorno dps d validar: %d", auxReturn);
+                    break;
+                }
+            }
+            if(auxReturn == 0 && mode >= 2)
+            {
+                strcpy(pResult, input);
+                printf("\nRetorno dps d validar: %d", auxReturn);
+                break;
+            }
+            if(auxReturn!=0)
+			{
+				printf("\nRetorno dps d validar caso error: %d", auxReturn);
+                printf("\n%s. %s", pMsgFail, pMsg);
+            }
+			if(j == try && auxReturn == -1)
+        	{
+         		printf(" Sin reintentos.");
+        	}
+		}
+	}
+	return auxReturn;
+}
+/////////////////////////
+int isNumeric(char aux[], int len){
+    int i, auxReturn=0;
+
+    len = strlen(aux);
+    for(i=0;i<len-1;i++)
+    {
+        if((aux[i] < '0' || aux[i] > '9') && aux[i] != '-') //filtro numerico
+        {
+			auxReturn = -1;
+            break;
+		}
+		if(aux[i]=='-'&& i!=0) // filtro p/negativos
+		{
+			auxReturn = -1;
+			break;
+		}
+    }
+    return auxReturn;
+}
+/////////////////////////
+int isDecimal(char aux[], int len){
+    int i, auxReturn=0;
+
+    for(i=0;i<len-1;i++)
+    {
+        if((aux[i] < '0' || aux[i] > '9' )&& aux[i]!= ',' && aux[i]!= '.' && aux[i]!= '-')
+		{
+            auxReturn = -1;
+            break;
+        }
+		if(aux[i]=='-'&& i!=0) // filtro p/negativos
+		{
+			auxReturn = -1;
+			break;
+		}
+		if(aux[i]==',')
+        {
+            aux[i]='.';
+        }
+    }
+    return auxReturn;
+}
+////////////////////////
+int isLetter(char aux[], int len){
+ 	int i, auxReturn=0;
+
+	for(i=0;i<len-1;i++)
+   	//while(aux[i] != '\0' || aux[i] != '\n')
+   	{
+		if((aux[i] < 'a' || aux[i] > 'z') && (aux[i] < 'A' || aux[i] > 'Z')) //filtro letras
+		{
+			if(aux[i] != ' ') //excepciones
+			{
+				auxReturn = -1;
+       			break;
+			//i++;
+			}
+   		}
+	}
+   return auxReturn;
+}
+//////////////////////////////
+int isAlphaNumeric(char aux[], int len){
+  	int i, auxReturn=0;
+
+	for(i=0;i<len-1;i++)
+   	//while(aux[i] != '\0' || aux[i] != '\n')
+	{
+	   	if((aux[i] < 'a' || aux[i] > 'z') && (aux[i] < 'A' || aux[i] > 'Z')) //filtro letras
+		{
+			auxReturn = -1;
+		}
+		else if(aux[i] < '0' || aux[i] > '9') //filtro numerico
+		{
+			auxReturn = -1;
+		}
+		else if((aux[i] != ' ') && (aux[i] != ',') && (aux[i] != '.')) //excepciones
+		{
+			auxReturn = -1;
+			//i++;
+		}
+		break;
+	}
+   return auxReturn;
+}
+///////////////////////////
+int isTelephone(char aux[], int len){
+   	int i, auxReturn=0;
+ 	int symbolCounter=0;
+
+	for(i=0;i<len-1;i++)
+   	{
+		if((aux[i] < '0' || aux[i] > '9') && (aux[i] != ' '|| aux[i] != '-' || aux[i] != '+'))
+		{
+			auxReturn=-1;
+			break;//i++;
+		}
+		if(symbolCounter >2)
+		{
+			if(aux[i] == '-' && i!=0)
+			{
+				symbolCounter ++;
+			}
+			if(aux[0] == '+')
+			{
+				symbolCounter ++;
+			}
+			auxReturn = -1;
+		}
+    }
+    return auxReturn;
+}
+//////////////////////////
+int isDni(char aux[], int len){
+
+    int i, auxReturn=0;
+
+    if(len >7 || len <8)
+    {
+        for(i=0;i<len-1;i++)
+        {
+            if(aux[i] < '0' || aux[i] > '9')
+            {
+                auxReturn=-1;
+                break;//i++;
+            }
+        }
+    }
+    else
+    {
+        auxReturn=-1;
+    }
+    return auxReturn;
+}
+///////////////////////////////
+int isCuitCuil(char aux[], int len) {
+    int i, auxReturn=0;
+
+    if(len==11)
+    {
+        for(i=0;i<len-1;i++)
+        {
+            if(aux[i] < '0' || aux[i] > '9')
+            {
+                auxReturn=-1;
+                break;//i++;
+            }
+        }
+    }
+    else
+    {
+        auxReturn=-1;
+    }
+    return auxReturn;
+}
+
+utn.h
+/*
+ * validations.h
+ *
+ *  Created on: 11 sep. 2019
+ *      Author: Daniel
+ */
+/** getInt
+* \brief Solicita al usuario un entero y lo valída mediante las funciones IS
+* \param pResult es el transito del entero
+* \param pMsg el mensaje q pide X / pMsgFail el mensaje de error de X
+* \param rango minimo / rango maximo / n° d intentos
+* \return 0 si el resultado es exitoso. -1 de lo contrario.
+*/
+int getInt(int *pResult ,char *pMsg, char *pMsgFail, int min, int max, int try);
+
+/** getFloat
+* \brief Solicita al usuario un decimal y lo valída mediante las funciones IS
+* \param pResult es el transito del entero
+* \param pMsg el mensaje q pide X / pMsgFail el mensaje de error de X
+* \param rango minimo / rango maximo / n° d intentos
+* \return 0 si el resultado es exitoso. -1 de lo contrario.
+*/
+int getFloat(float *pResult ,char *pMsg, char *pMsgFail, int min, int max, int try);
+
+/** getChar
+* \brief Solicita al usuario un string y lo valída mediante las funciones IS
+* \param pResult es el transito del entero
+* \param pMsg el mensaje q pide X / pMsgFail el mensaje de error de X
+* \param rango minimo / rango maximo / n° d intentos
+* \return 0 si el resultado es exitoso. -1 de lo contrario.
+*/
+int getInput(char *pResult, char *pMsg, char *pMsgFail, int min, int max, int try, int mode);
+
+/** isNumeric
+* \brief Verifica si el valor recibido contiene solo numeros
+* \param str Array con la cadena a ser analizada
+* \return 1 si contiene numeros del '0' al '9' por orden ASCII y 0 si no
+*/
+int isNumeric(char aux[], int len);
+
+/** isDecimal
+* \brief Verifica si el valor recibido contiene telefonos
+* \param str Array con la cadena a ser analizada
+* \return 1 si contiene solo numeros, espacios, un + y un guion.
+*/
+int isDecimal(char aux[], int len);
+
+/** isLetter
+* \brief Verifica si el valor recibido contiene letras
+* \param str Array con la cadena a ser analizada
+* \return 1 si contiene solo ' ' y/o letras y 0 si no
+*/
+int isLetter(char aux[], int len);
+
+/** isAlphaNumeric
+* \brief Verifica si el valor recibido contiene solo letras y números
+* \param str Array con la cadena a ser analizada
+* \return 1 si contiene solo espacio o letras y números, y 0 si no lo es
+*/
+int isAlphaNumeric(char aux[], int len);
+
+/** isTelephone
+* \brief Verifica si el valor recibido contiene telefonos
+* \param str Array con la cadena a ser analizada
+* \return 1 si contiene solo numeros, espacios, un + y un guion.
+*/
+int isTelephone(char aux[], int len);
+
+/** isDni
+* \brief Verifica si el valor recibido q contiene dni
+* \param str Array con la cadena a ser analizada y el largo de la cadena
+* \return 1 si contiene solo numeros, espacios, un + y un guion.
+*/
+int isDni(char aux[], int len);
+
+/** isDni
+* \brief Verifica si el valor recibido q contiene dni
+* \param str Array con la cadena a ser analizada y el largo de la cadena
+* \return 1 si contiene solo numeros, espacios, un + y un guion.
+*/
+int isCuitCuil(char aux[], int len);
+

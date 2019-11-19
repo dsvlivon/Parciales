@@ -1,0 +1,17 @@
+#ifndef PEDIDO_H_
+#define PEDIDO_H_
+
+typedef struct
+{
+
+	int idPedido;
+	int idCliente;
+	float kilo;
+	int pedido; // 0 PENDIENTE && 1 COMPLETADO
+
+}Recoleccion;
+
+
+void initPedido(Recoleccion list[], int len,int value);
+
+#endif /* PEDIDO_H_ */

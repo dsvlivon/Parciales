@@ -1,0 +1,95 @@
+22:10:45 **** Incremental Build of configuration Debug for project ejercicioPreParcialV3 ****
+make all 
+Building file: ../src/Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Controller.d" -MT"src/Controller.o" -o "src/Controller.o" "../src/Controller.c"
+Finished building: ../src/Controller.c
+ 
+Building file: ../src/LinkedList.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+Finished building: ../src/LinkedList.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+In file included from ../src/Menu.c:33:0:
+../src/Parser.h:15:43: error: unknown type name ‘LinkedList’
+ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee);
+                                           ^~~~~~~~~~
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:83:21: warning: implicit declaration of function ‘parser_parseEmpleados’ [-Wimplicit-function-declaration]
+                  if(parser_parseEmpleados("data.csv",listaEmpleados)==1)
+                     ^~~~~~~~~~~~~~~~~~~~~
+../src/Menu.c:83:54: error: ‘listaEmpleados’ undeclared (first use in this function)
+                  if(parser_parseEmpleados("data.csv",listaEmpleados)==1)
+                                                      ^~~~~~~~~~~~~~
+../src/Menu.c:83:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/Menu.c:87:26: warning: implicit declaration of function ‘al_map’ [-Wimplicit-function-declaration]
+                          al_map(listaEmpleados,em_calcularSueldo);
+                          ^~~~~~
+../src/Menu.c:90:29: warning: implicit declaration of function ‘generarArchivoSueldos’ [-Wimplicit-function-declaration]
+                          if(generarArchivoSueldos("sueldos.csv",listaEmpleados)==1)
+                             ^~~~~~~~~~~~~~~~~~~~~
+../src/Menu.c:106:13: error: case label not within a switch statement
+             case 2://printf("En proceso... ");
+             ^~~~
+../src/Menu.c:115:53: error: ‘pArrayListEmployee’ undeclared (first use in this function)
+                         controller_deleteLinkedList(pArrayListEmployee);
+                                                     ^~~~~~~~~~~~~~~~~~
+../src/Menu.c:118:29: warning: implicit declaration of function ‘controller_loadFromBinary’ [-Wimplicit-function-declaration]
+                             controller_loadFromBinary("data2.bin",pArrayListEmployee);
+src/subdir.mk:36: fallo en las instrucciones para el objetivo 'src/Menu.o'
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Menu.c:126:13: error: case label not within a switch statement
+             case 3: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:134:13: error: case label not within a switch statement
+             case 4: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:142:13: error: case label not within a switch statement
+             case 5: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:150:13: error: case label not within a switch statement
+             case 6: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:158:13: error: case label not within a switch statement
+             case 7: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:166:13: error: case label not within a switch statement
+             case 8: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:174:13: error: case label not within a switch statement
+             case 9: //printf("En proceso... ");
+             ^~~~
+../src/Menu.c:177:21: warning: implicit declaration of function ‘controller_saveAsBinary’ [-Wimplicit-function-declaration]
+                     controller_saveAsBinary("data2.bin", pArrayListEmployee);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Menu.c:182:13: error: case label not within a switch statement
+             case 10:
+             ^~~~
+../src/Menu.c:187:13: error: ‘default’ label not within a switch statement
+             default: printf("Opcion invalida\n");
+             ^~~~~~~
+../src/Menu.c:190:9: error: expected ‘while’ before ‘system’
+         system("pause");
+         ^~~~~~
+../src/Menu.c: At top level:
+../src/Menu.c:191:6: error: expected identifier or ‘(’ before ‘while’
+     }while (option !=10);
+      ^~~~~
+../src/Menu.c:192:5: error: expected identifier or ‘(’ before ‘return’
+     return auxReturn;
+     ^~~~~~
+../src/Menu.c:193:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:191:5: warning: control reaches end of non-void function [-Wreturn-type]
+     }while (option !=10);
+     ^
+make: *** [src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:10:46 Build Failed. 19 errors, 6 warnings. (took 396ms)
+

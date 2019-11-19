@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "pedido.h"
+
+/**
+ * \brief Inicializa el status en un array de empleados
+ * \param list Es el array en el cual buscar
+ * \param len Indica la logitud del array
+ * \param value Es el valor que se asignara a isEmpty
+ * \return -
+ *
+ */
+void initPedido(Recoleccion list[], int len,int value)
+{
+    int i;
+    for(i=0;i < len; i++)
+    {
+        list[i].isEmpty1 = value;
+
+    }
+}

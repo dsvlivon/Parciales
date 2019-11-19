@@ -1,0 +1,388 @@
+20:56:50 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+20:56:53 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:01:45 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:315:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/main.o'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:01:47 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:315:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/main.o'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:02:02 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:315:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/main.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:02:03 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:315:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/main.o'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:03:11 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:315:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/main.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:04:40 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:04:42 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:04:50 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:08:47 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:08:51 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:08:55 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:11:01 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:273:23: warning: implicit declaration of function ‘buscarIdPedido’ [-Wimplicit-function-declaration]
+    encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+                       ^~~~~~~~~~~~~~
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:11:03 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:11:51 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:189:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:257:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:46:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedido.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedido.d" -MT"src/pedido.o" -o "src/pedido.o" "../src/pedido.c"
+Finished building: ../src/pedido.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:11:52 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:12:15 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:22:29 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:190:14: warning: comparison between pointer and integer
+    if (idAux == NULL)
+              ^~
+../src/main.c:258:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:47:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedido.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedido.d" -MT"src/pedido.o" -o "src/pedido.o" "../src/pedido.c"
+Finished building: ../src/pedido.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:22:31 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:26:00 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:190:15: warning: comparison between pointer and integer
+     if (idAux == NULL)
+               ^~
+../src/main.c:258:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:47:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:26:01 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:26:52 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:190:15: warning: comparison between pointer and integer
+     if (idAux == NULL)
+               ^~
+../src/main.c:258:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:47:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:26:53 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:27:37 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:190:15: warning: comparison between pointer and integer
+     if (idAux == NULL)
+               ^~
+../src/main.c:258:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:47:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:27:38 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:27:48 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:31:50 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:190:15: warning: comparison between pointer and integer
+     if (idAux == NULL)
+               ^~
+../src/main.c:258:21: warning: comparison between pointer and integer
+     if (idPedidoAux == NULL)
+                     ^~
+../src/main.c:47:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j;
+        ^
+Finished building: ../src/main.c
+ 
+Building target: Evaluacion
+Invoking: GCC C Linker
+gcc  -o "Evaluacion"  ./src/cliente.o ./src/main.o ./src/pedido.o ./src/utn.o   
+Finished building target: Evaluacion
+ 
+21:31:51 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:31:56 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.
+21:33:37 **** Incremental Build of configuration Debug for project Evaluacion ****
+make all 
+make: No se hace nada para 'all'.

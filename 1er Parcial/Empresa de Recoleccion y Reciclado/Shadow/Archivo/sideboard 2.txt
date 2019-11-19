@@ -1,0 +1,46 @@
+void ppPromedioXcliente(Client pArray[], Order oArray[]){
+	int i,j;
+	int c_index,o_index;
+	int ppBuffer = 0;
+	int ppCounter = 0;
+	int auxCompanyId;
+	int flag = -1;
+	/////////////////////////////////////////////
+	if(pArray!=NULL && oArray!=NULL)
+	{
+		sortClient(pArray, QTY_CLIENT);
+		printf("\nLISTADO DE PP PROCESADO PROMEDIO POR CLIENTE: \n");
+		for (i = 0; i < QTY_ORDER; i++)
+		{
+			auxCompanyId = oArray[i].companyId;
+			if (oArray[i].isEmpty == 1 && oArray[i].status == 1)
+			{
+				o_index = i;
+				for(j = 0; j < QTY_CLIENT; j++)
+				{
+					if(pArray[j].companyId == auxCompanyId)
+					{
+							ppBuffer+=oArray[i].pp;
+							ppCounter++;
+							c_index = j;
+							break;
+					}
+				}
+				if(oArray[o_index].companyId != oArray[o_index+1].companyId)
+				{
+					printf("\nNro.Cliente: %d", oArray[o_index].companyId);
+					printf("\nCliente: %s", pArray[c_index].company);
+					printf("\nCant. PP promedio procesado: %d", ppBuffer/ppCounter);
+					printf("\n///////////////////////////////////////////\n");
+					flag = 0;
+					ppCounter = 0;
+					ppBuffer = 0;
+				}
+			}
+		}
+		if(flag != 0)
+		{
+			printf("PEDIDOS AL DIA.\n");
+		}
+	}
+}

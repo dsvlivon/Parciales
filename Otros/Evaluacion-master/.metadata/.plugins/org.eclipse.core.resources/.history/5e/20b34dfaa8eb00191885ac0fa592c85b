@@ -1,0 +1,25 @@
+
+#ifndef CLIENTE_H_
+#define CLIENTE_H_
+
+typedef struct
+{
+	int nombre;
+	int cuit;
+	char direccion[51];
+	char localidad[51];
+	int id;
+	int isEmpty; // *Activo == (1) || *Inactivo == (0)
+
+}Cliente;
+
+
+
+
+
+
+
+
+
+
+#endif /* CLIENTE_H_ */

@@ -1,0 +1,147 @@
+# depslib dependency file v1.0
+1571254837 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\abm.c
+	<stdlib.h>
+	<string.h>
+	"ABM.h"
+	"utn.h"
+
+1571239916 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\abm.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteABM.h"
+	"pedidoABM.h"
+
+1571142849 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\clienteabm.h
+
+1571142789 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\pedidoabm.h
+
+1570754729 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\utn.h
+
+1571241158 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\clienteabm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteABM.h"
+
+1571255709 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\clienteinformes.c
+	"clienteInformes.h"
+
+1571255772 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\clienteinformes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteABM.h"
+
+1571142860 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ABM.h"
+
+1571232751 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\pedidoabm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pedidoABM.h"
+
+1571256172 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\pedidoinformes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pedidoInformes.h"
+
+1571239949 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\pedidoinformes.h
+	"pedidoABM.h"
+
+1571241096 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1571255961 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\relacioninformes.c
+	"relacionInformes.h"
+
+1571255816 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\parcial1_reciclaje\relacioninformes.h
+	"pedidoABM.h"
+	"clienteABM.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1571324493 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\abm.c
+	"ABM.h"
+	"utn.h"
+
+1571318870 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\abm.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteABM.h"
+	"pedidoABM.h"
+
+1571319259 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\clienteabm.h
+	"clienteStruct.h"
+
+1571324217 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\pedidoabm.h
+	"pedidoStruct.h"
+
+1570754730 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\utn.h
+
+1571323868 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\clienteinformes.c
+	"clienteInformes.h"
+
+1571324205 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\clienteinformes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteStruct.h"
+	"pedidoStruct.h"
+
+1571324530 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ABM.h"
+
+1571324409 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\pedidoabm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pedidoABM.h"
+
+1571323900 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\pedidoinformes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pedidoInformes.h"
+
+1571324221 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\pedidoinformes.h
+	"pedidoABM.h"
+	"relacionInformes.h"
+
+1571324152 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\relacioninformes.c
+	"relacionInformes.h"
+
+1571319029 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\relacioninformes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1571320355 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1571324384 source:c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\clienteabm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clienteABM.h"
+
+1571324213 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\clientestruct.h
+
+1571319154 c:\users\sa-julian\documents\estudio\utn fra\1er cuatrimestre\programación y laboratorio 1\tp_laboratorio_1\parcial1_reciclaje\pedidostruct.h
+

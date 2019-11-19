@@ -1,0 +1,93 @@
+/*
+ ============================================================================
+ Name        : Evaluacion.c
+ Author      : Barrios
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "cliente.h"
+#define QTY_CLIENTES 100
+#define QTY_PEDIDOS 1000
+
+
+int main(void)
+{
+	// array de clientes
+	Cliente arrayClientes[QTY_CLIENTES];
+
+	// Auxiliar para realizar el swap
+	Cliente arrayAux;
+
+	char nombreAuxStr[51];
+	int nombreAux;
+	char cuitAuxStr[51];
+	int cuitAux;				//Auxiliares
+	char direccion[51];
+	char localidad[51];
+	char idAuxStr[51];
+	int idAux;
+
+
+	int espacioLibre;
+	int encontrarEspacio;
+	int opcion = 0;
+	int i,j;
+
+	// --- inicio el Array de empleados. Cargo todos los datos en 0. ---
+	initCliente (arrayClientes,QTY_CLIENTES,0);
+
+
+	while(opcion !=8)
+	{
+		opcion = getInt("\n\n\n1 - ALTA CLIENTE \n2 - MODIFICAR DATOS CLIENTE \n3 - BAJAR CLIENTE\n4 -  \n8 - SALIR\n\n\n");
+
+		switch(opcion)
+		{
+		case 1:
+		case 1: // --- ALTA ---
+
+			                espacioLibre = buscarLugarLibre(arrayClientes,QTY_CLIENTES); // Busco si hay espacio libre.
+
+			                if(espacioLibre == -1)
+			                {
+			                    printf("\n\nNO QUEDAN LUGARES LIBRES!!!\n");
+			                    break;
+			                }
+
+			                printf("\nALTA\n");
+
+			                // --- Validaciones ---
+
+
+			                // --- Cargo los datos en los campos ---
+			                empleadosArray[espacioLibre].id = idAux;
+			                strcpy(empleadosArray[espacioLibre].lastName,lastNameAux);
+			                strcpy(empleadosArray[espacioLibre].name,nameAux);
+			                empleadosArray[espacioLibre].salary = salaryAux;
+			                empleadosArray[espacioLibre].sector = sectorAux;
+			                empleadosArray[espacioLibre].isEmpty = 1;
+
+			                break;
+
+
+
+
+
+
+		}
+
+
+
+
+	}
+
+
+
+}

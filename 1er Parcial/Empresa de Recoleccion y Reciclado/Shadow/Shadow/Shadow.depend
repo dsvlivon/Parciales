@@ -1,0 +1,412 @@
+# depslib dependency file v1.0
+1569422745 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1569592288 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569422864 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\menu.h
+
+1569587769 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayfunctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayFunctions.h"
+
+1569508418 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\validations.h
+
+1569585780 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayfunctions.h
+
+1569589471 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569592375 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569591970 c:\users\daniel\documents\dany\utn\programacion_1\trabajos prácticos\tp2\tp2\arrayemployees.h
+
+1570212093 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569422866 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\menu.h
+
+1569682124 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\validations.h
+
+1570211593 c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\arrayemployees.h
+
+1569422746 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570211565 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570202961 source:c:\users\daniel\documents\dany\utn\programacion_1\trabajos practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569422746 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1569422866 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\menu.h
+
+1570045836 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1569682124 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\validations.h
+
+1570047392 c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\arrayemployees.h
+
+1569601360 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570188741 source:c:\users\daniel\desktop\nueva carpeta\trabajos practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\menu.h
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\validations.h
+
+1570217706 c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\arrayemployees.h
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570217706 source:c:\users\daniel\documents\dany\utn\programacion_1\nueva carpeta\trabajos_practicos\tp2\tp2\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayEmployees.h"
+
+1570543053 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570546752 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\menu.h
+
+1570546709 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayStruct.h"
+	"arraInforms.h"
+
+1570543321 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\validations.h
+
+1570546593 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\arraystruct.h
+
+1570546833 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayStruct.h"
+	"arraInforms.h"
+
+1570546487 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\arrainforms.c
+
+1570546701 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\arraystruct.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayStruct.h"
+	"arraInforms.h"
+
+1570546668 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\biblioteca\shadow\shadow\arrainforms.h
+
+1570546487 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\arrainforms.c
+
+1570546701 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\arraystruct.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"arrayStruct.h"
+	"arraInforms.h"
+
+1570546752 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\menu.h
+
+1570631091 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\validations.h
+
+1570546593 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\arraystruct.h
+
+1570546668 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\arrainforms.h
+
+1570715275 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1570720981 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Juego.h"
+
+1570722775 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+
+1570655245 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\juego.h
+
+1570625847 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Categoria.h"
+	"arraInforms.h"
+
+1570622470 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\categoria.h
+
+1570705091 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Cliente.h"
+
+1570645761 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\cliente.h
+
+1570722702 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Cliente.h"
+	"Alquiler.h"
+	"Juego.h"
+
+1570722814 c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\alquiler.h
+
+1570722677 source:c:\users\daniel\desktop\semiparcial\alquiler de juegos\shadow\shadow\alquiler.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Alquiler.h"
+	"Cliente.h"
+
+1570720982 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menu.h"
+	"validations.h"
+	"Juego.h"
+
+1571327065 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\menu.h
+
+1571327085 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\validations.h
+
+1570655246 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\juego.h
+
+1571327195 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1571327238 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1571336221 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\pedidos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Pedidos.h"
+
+1571404720 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Cliente.h"
+
+1571404649 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\cliente.h
+
+1571404959 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"validations.h"
+	"Cliente.h"
+	"Pedidos.h"
+	"Informes.h"
+
+1571327072 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\pedidos.h
+
+1571339717 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Cliente.h"
+	"Pedidos.h"
+
+1571327043 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial\empresa de recoleccion y reciclado\shadow\shadow\informes.h
+
+1571921574 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Cliente.h"
+
+1571327085 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\validations.h
+
+1571921570 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\cliente.h
+
+1571327195 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1571327065 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\menu.h
+
+1571925913 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"validations.h"
+	"Cliente.h"
+	"Pedidos.h"
+	"Informes.h"
+
+1571921803 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\pedidos.h
+
+1571922682 c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\informes.h
+
+1571921761 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\pedidos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Pedidos.h"
+
+1571327238 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
+1571931029 source:c:\users\daniel\documents\dany\utn\programacion_1\1er parcial - vizgarra livon d\empresa de recoleccion y reciclado\shadow\shadow\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+	"Cliente.h"
+	"Pedidos.h"
+

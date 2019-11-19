@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="parcial1_reciclaje" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/parcial1_reciclaje" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/parcial1_reciclaje" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="ABM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ABM.h" />
+		<Unit filename="clienteABM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clienteABM.h" />
+		<Unit filename="clienteInformes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clienteInformes.h" />
+		<Unit filename="clienteStruct.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pedidoABM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pedidoABM.h" />
+		<Unit filename="pedidoInformes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pedidoInformes.h" />
+		<Unit filename="pedidoStruct.h" />
+		<Unit filename="relacionInformes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="relacionInformes.h" />
+		<Unit filename="utn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utn.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

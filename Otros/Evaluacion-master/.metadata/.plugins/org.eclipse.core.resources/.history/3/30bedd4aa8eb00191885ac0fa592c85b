@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+ Name        : Evaluacion.c
+ Author      : Barrios
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "cliente.h"
+#define QTY_CLIENTES 100
+#define QTY_PEDIDOS 1000
+
+
+int main(void)
+{
+	// array de clientes
+	Cliente arrayClientes[QTY_CLIENTES];
+
+	// Auxiliar para realizar el swap
+	Cliente arrayAux;
+
+	char nombreAuxStr[51];
+	int nombreAux;
+	char cuitAuxStr[51];
+	int cuitAux;				//Auxiliares
+	char direccion[51];
+	char localidad[51];
+	char idAuxStr[51];
+	int idAux;
+
+
+	int espacioLibre;
+	int encontrarEspacio;
+	int opcion = 0;
+	int i,j;
+
+	switch()
+
+
+
+}

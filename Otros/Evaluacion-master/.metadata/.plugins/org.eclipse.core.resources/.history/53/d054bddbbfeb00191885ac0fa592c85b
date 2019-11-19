@@ -1,0 +1,334 @@
+/*
+ ============================================================================
+ Name        : Evaluacion.c
+ Author      : Barrios
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "cliente.h"
+#include "pedido.h"
+#define QTY_CLIENTES 100
+#define QTY_PEDIDOS 100
+
+
+int main(void)
+{
+	// array de clientes
+	Cliente arrayClientes[QTY_CLIENTES];
+
+	// array pedidos
+	Recoleccion arrayPedido[QTY_PEDIDOS];
+
+	char nombreAux[51];
+	char cuitAuxStr[51];
+	int cuitAux;				//Auxiliares CLIENTE
+	char direccionAux[51];
+	char localidadAux[51];
+	char idAuxStr[51];
+	int idAux;
+
+	char kilosAuxStr[51];
+	float kilosAux; 	// Auxiliares RECOLECCION
+	char idPedidoAuxStr[51];
+	int idPedidoAux;
+	char tipoPlasticoAux[51];
+
+
+	int espacioLibre;
+	int encontrarEspacio;
+	int opcion = 0;
+	int i,j;
+
+	// --- inicio el Array de empleados. Cargo todos los datos en 0. ---
+	initCliente (arrayClientes,QTY_CLIENTES,0);
+	initPedido (arrayPedido,QTY_PEDIDOS,0);
+
+
+	while(opcion != 9)
+	{
+		opcion = getInt("\n\n\n1 - ALTA CLIENTE \n2 - MODIFICAR DATOS CLIENTE\n3 - BAJAR CLIENTE\n4 - CREAR PEDIDO DE RECOLECCION\n5 - PROCESAR RESIDUOS\n6 - IMPRIMIR CLIENTES\n9 - SALIR\n\n\n");
+
+		switch(opcion)
+		{
+		case 1: // --- ALTA ---
+
+			                espacioLibre = buscarLugarLibre(arrayClientes,QTY_CLIENTES); // Busco si hay espacio libre.
+
+			                if(espacioLibre == -1)
+			                {
+			                    printf("\n\nNO QUEDAN LUGARES LIBRES!!!\n");
+			                    break;
+			                }
+
+			                printf("\nALTA\n");
+
+			                // --- Validaciones ---
+
+			                if (!getStringNumeros("Ingrese el id: ",idAuxStr))
+			                {
+			                	printf ("El id debe ser numerico\n");
+			                	break;
+			                }
+			                idAux = atoi(idAuxStr);
+
+			                if(buscarId(arrayClientes,QTY_CLIENTES,idAux) != -1)
+			                {
+			                	printf("\n\nEL ID YA EXISTE!!!\n");
+			                	break;
+			                }
+
+
+			                if (!getStringLetras("Ingrese el nombre: ",nombreAux))
+			                {
+
+			                printf ("El nombre debe estar compuesta solo por letras\n");
+			                break;
+
+			                }
+
+			                if (!getStringNumeros("Ingrese el cuit: ",cuitAuxStr))
+			                {
+			                	printf ("El cuit debe ser numerico\n");
+			                	break;
+			                }
+			                cuitAux = atoi(cuitAuxStr);
+
+			                if (!getStringLetras("Ingrese la direccion: ",direccionAux))
+			                {
+
+			                	printf ("La direccion debe estar compuesta solo por letras\n");
+			                	break;
+			                }
+
+			                if (!getStringLetras("Ingrese la localidad: ",localidadAux))
+			                {
+
+			                	printf ("La localidad debe estar compuesta solo por letras\n");
+			                	break;
+			                }
+
+
+
+			                // --- Cargo los datos en los campos ---
+			                arrayClientes[espacioLibre].id = idAux;
+			                strcpy(arrayClientes[espacioLibre].nombre,nombreAux);
+			                strcpy(arrayClientes[espacioLibre].direccion,direccionAux);
+			                strcpy(arrayClientes[espacioLibre].localidad,localidadAux);
+			                arrayClientes[espacioLibre].cuit = cuitAux;
+			                arrayClientes[espacioLibre].isEmpty = 1;
+
+			                break;
+
+		case 2:
+
+			if (!getStringNumeros("Ingrese el id a modificar: ",idAuxStr))
+				            	{
+				            		printf ("El id debe ser numerico\n");
+				            		break;
+				            	}
+				            	idAux = atoi(idAuxStr);
+
+				            	encontrarEspacio = buscarId(arrayClientes,QTY_CLIENTES,idAux);
+
+				            	if(encontrarEspacio == -1)
+				            	{
+				            		printf("\n\nNO SE ENCUENTRA ESE ID\n");
+				            		break;
+				            	}
+
+				            	if (!getStringLetras("Ingrese la nueva direccion: ",direccionAux))
+				            	{
+				            		printf ("La direccion debe estar compuesta solo por letras\n");
+				            		break;
+				            	}
+				            	if (!getStringLetras("Ingrese la nueva localidad: ",localidadAux))
+				            	{
+				            		printf ("La localidad debe estar compuesta solo por letras\n");
+				            		break;
+				            	}
+
+				            	// --- Le asigno la modificacion nueva. ---
+				            	strcpy(arrayClientes[encontrarEspacio].direccion,direccionAux);
+				            	strcpy(arrayClientes[encontrarEspacio].localidad,localidadAux);
+				            	arrayClientes[encontrarEspacio].isEmpty = 1;
+				            	break;
+
+
+			case 3: // --- BAJA ---
+				if (!getStringNumeros("Ingrese el id  a dar de baja: ",idAuxStr))
+				{
+					printf ("El id debe ser numerico\n");
+					break;
+				}
+				idAux = atoi(idAuxStr);
+
+				encontrarEspacio = buscarId(arrayClientes,QTY_CLIENTES,idAux);
+
+				if(encontrarEspacio == -1)
+				{
+					printf("\n\nNO FUE POSIBLE ENCONTRAR ESE ID\n");
+					break;
+				}
+				arrayClientes[encontrarEspacio].isEmpty = 0; // = 0 osea inactivo.
+
+				break;
+
+
+
+			case 4: // --- CREAR PEDIDO DE RECOLECCION ---
+
+				//clientes impresos/listamiento:
+
+
+				if (idAux == NULL)
+				{
+					printf ("PONE UN ID LOCO");
+
+				}
+
+				else {
+
+					printf("\nIdCliente - CUIT - DIRECCION - LOCALIDAD - NOMBRE\n");
+					for(i=0;i < QTY_CLIENTES; i++)
+					{
+						if(arrayClientes[i].isEmpty != 0)
+						{
+							printf("\n%d - %d - %s - %s - %s\n",arrayClientes[i].id,arrayClientes[i].cuit,arrayClientes[i].direccion,arrayClientes[i].localidad,arrayClientes[i].nombre);
+						}
+
+					}
+
+
+					if (!getStringNumeros("Ingrese el id pedido: ",idPedidoAuxStr))
+					{
+						printf ("El id debe ser numerico\n");
+						break;
+					}
+					idPedidoAux = atoi(idPedidoAuxStr);
+
+					encontrarEspacio = buscarId(arrayClientes,QTY_CLIENTES,idAux);
+
+					if(encontrarEspacio == -1)
+					{
+						printf("\n\nNO SE ENCUENTRA ESE ID\n");
+						break;
+					}
+
+
+
+
+					if (!getStringNumerosFlotantes("Ingrese la cantidad de kilos: ",kilosAuxStr))
+					{
+						printf ("La cantidad de kilos debe ser numerico\n");
+						break;
+					}
+					kilosAux = atof(kilosAuxStr);
+
+					}
+
+
+				arrayPedido[encontrarEspacio].idPedido = idPedidoAux;
+				arrayPedido[encontrarEspacio].kilo = kilosAux;
+				arrayPedido[espacioLibre].pedido = 1;
+
+				if(( arrayPedido[espacioLibre].pedido = 1) == 1)
+				{
+					printf("PENDIENTE");
+
+				}
+
+				else
+				{
+					printf("COMPLETADO");
+
+				}
+
+
+				break;
+
+			case 5: // --- PROCESAR RESIDUOS --- // MALIO SAL
+
+			 if (idPedidoAux == NULL)
+			 {
+				 printf("Complete los campos anteriores");
+
+			 }
+
+
+			 else {
+
+			if (!getStringNumeros("Ingrese el id del pedido: ",idPedidoAuxStr))
+			{
+				printf ("El id debe ser numerico\n");
+				break;
+			}
+			idPedidoAux = atoi(idPedidoAuxStr);
+
+			encontrarEspacio = buscarIdPedido(arrayPedido,QTY_PEDIDOS,idPedidoAux);
+
+			if(encontrarEspacio == -1)
+			{
+				printf("\n\nNO SE ENCUENTRA ESE ID\n");
+				break;
+			}
+
+			if (!getStringLetras("Ingrese el tipo de plastico - HDPE - LDPE - PP:  ",tipoPlasticoAux))
+			{
+				printf ("\nEl tipo de plastico debe estar compuesta solo por letras\n");
+				break;
+			}
+
+
+        	strcpy(arrayPedido[encontrarEspacio].tipoPlastico,tipoPlasticoAux);
+
+			 }
+
+
+
+			break;
+
+		case 6: // --- IMPRIMIR CLIENTES ---
+
+			printf("\nIdCliente - CUIT - DIRECCION - LOCALIDAD - NOMBRE - ESTADO\n");
+
+
+
+						 for(i=0;i < QTY_CLIENTES; i++)
+						 {
+							 if(arrayClientes[i].isEmpty != 0)		// LOS LISTO Y LE AGREGO LOS PENDIENTE
+							 {
+
+								 printf("\n%d - %d - %s - %s - %s - %d\n",arrayClientes[i].id,arrayClientes[i].cuit,arrayClientes[i].direccion,arrayClientes[i].localidad,arrayClientes[i].nombre,arrayPedido[i].pedido);
+							 }
+						 }
+
+			printf("\n SI EL ESTADO ES 1 ESTA PENDIENTE \n");
+							 break;
+
+		case 7: // --- IMPRIMIR PEDIDOS PENDIENTES ---
+
+
+			break;
+
+
+
+
+
+
+
+
+
+
+
+	}
+		}
+
+
+}

@@ -1,0 +1,15 @@
+for (i = 0; i < QTY_ORDER; i++)
+{
+	if (oArray[i].isEmpty == 1 && oArray[i].status == 0)
+	{
+		auxCompanyId = oArray[i].companyId;
+		o_index=i;
+		for(j = 0; j < QTY_CLIENT; j++)
+		{
+			if(pArray[j].companyId == auxCompanyId)
+			{
+				c_index = j;
+				flag = 0;
+				break;
+			}
+		}
