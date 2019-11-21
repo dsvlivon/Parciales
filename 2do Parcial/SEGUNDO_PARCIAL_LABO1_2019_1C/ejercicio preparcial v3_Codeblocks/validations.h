@@ -85,3 +85,10 @@ int isTelephone(char aux[]);
 * \return 0 si contiene solo numeros, espacios, un + y un guion.
 */
 int isCuit(char aux[]);
+////////////////////////////////////////////////////////////////////////////////// (9) isDate
+/** isDate
+* \brief Verifica si el valor recibido contiene fechas
+* \param str Array con la cadena a ser analizada
+* \return 0 si contiene solo numeros y un maximo de 2 '/' slashs
+*/
+int isDate(char aux[]);

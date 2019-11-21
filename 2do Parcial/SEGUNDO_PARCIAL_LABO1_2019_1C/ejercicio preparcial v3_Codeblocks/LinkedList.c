@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "LinkedList.h"
-#include "Registro.h"
+#include "Venta.h"
 
 static Node* getNode(LinkedList* this, int nodeIndex);
 static int addNode(LinkedList* this, int nodeIndex,void* pElement);
@@ -562,7 +562,7 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order){
     }
     return auxReturn;
 }
-int ll_map(LinkedList* this,void (*pFunc)(void*)){
+/*int ll_map(LinkedList* this,void (*pFunc)(void*)){
 	int auxReturn=-1;
 	int i,xLen;
 	int counter=0;
@@ -577,7 +577,7 @@ int ll_map(LinkedList* this,void (*pFunc)(void*)){
 			{
 				buffer=ll_get(this,i);//obtengo el elemento indicado x i
 				//void em_calcularSueldo(void* p);
-				em_calcularSueldo(buffer);
+				element_calcularSueldo(buffer);
 				counter++;// cuento
 			}
 			if(counter==xLen)// chequeo que se calcularon todos
@@ -587,7 +587,7 @@ int ll_map(LinkedList* this,void (*pFunc)(void*)){
 		}
 	}
 	return auxReturn;
-}
+}*/
 LinkedList* ll_filter(LinkedList* this,int (*pFunc)(void*)){
     LinkedList* filterList= NULL;
     int xLen, i;

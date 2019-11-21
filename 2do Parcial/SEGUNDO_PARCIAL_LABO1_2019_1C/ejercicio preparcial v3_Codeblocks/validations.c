@@ -64,6 +64,9 @@ int getInput(char *pResult, char *pMsg, char *pMsgFail, int min, int max, int tr
                 case 8:
                 auxReturn = isCuit(input);
                 break;
+                case 9:
+                auxReturn = isDate(input);
+                break;
                 default:
                 printf("invalid request");
                 break;
@@ -96,7 +99,7 @@ int getInput(char *pResult, char *pMsg, char *pMsgFail, int min, int max, int tr
                         auxReturn=-1;
                     }
                 }
-                else if(mode == 3 || mode == 4 || mode == 5 || mode == 6  || mode == 7 || mode == 8) {// salida p/modes string
+                else if(mode == 3 || mode == 4 || mode == 5 || mode == 6  || mode == 7 || mode == 8 || mode == 9) {// salida p/modes string
                     strcpy(cBuffer, input);
                     if(strlen(cBuffer)==strlen(input))
                     {
@@ -223,36 +226,6 @@ int isAlphaNumeric(char aux[]){
 	}
    return auxReturn;
 }
-////////////////////////////////////////////////////////////////////////////////// (x) isTelephone
-int isDate(char aux[]){
-    int i;
-    int counter=0;
-    int auxReturn=0;
-    int len;
-
-    len=strlen(aux);
-    for(i=0;i<len;i++)
-   	{
-        if(aux[i] < '0' || aux[i] > '9') //filtro numerico
-        {
-            if(aux[i] != '/') //excepciones
-            {
-                if(aux[i] == '/')
-                {
-                    counter++;
-                }
-                if(counter>2)
-                {
-                    auxReturn = -1;
-                    //i++;
-                    break;
-                    //printf("\nIngrese la fecha en formato xx/xx/xx\n");
-                }
-            }
-        }
-	}
-    return auxReturn;
-}
 ////////////////////////////////////////////////////////////////////////////////// (5) isAnswer
 int isAnswer(char aux[]){
  	int i, auxReturn=0;
@@ -357,6 +330,46 @@ int isCuit(char aux[]){
             }
         }
         if(aux[2]!='-' || aux[11]!='-')
+        {
+            auxReturn = -1;
+        }
+        if(counter!=2) // counter >'2')
+        {
+            auxReturn = -1;
+        }
+    }
+    else
+    {
+        auxReturn=-1;
+    }
+return auxReturn;
+}
+////////////////////////////////////////////////////////////////////////////////// (9)
+int isDate(char aux[]){
+    int auxReturn=0;
+    int len;
+    int i;
+    int counter=0;
+
+    len=strlen(aux);
+    if(len==10)
+    {
+        for(i=0;i<len;i++)
+        {
+            if(aux[i] < '0' || aux[i] > '9') //filtro numerico
+            {
+                if(aux[i] != '/') //excepciones
+                {
+                    auxReturn = -1;
+                    break;
+                }
+                if(aux[i] == '/')
+                {
+                    counter++;
+                }
+            }
+        }
+        if(aux[2]!='/' || aux[5]!='/')
         {
             auxReturn = -1;
         }

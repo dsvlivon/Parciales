@@ -10,4 +10,4 @@
 * \param listaEmpleados LinkedList*
 * \return int
 */
-int parser_registerFromText(FILE* pFile , LinkedList* listaRegistro);
+int parser_ElementFromText(FILE* pFile , LinkedList* auxList);

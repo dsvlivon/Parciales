@@ -9,26 +9,26 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "parser.h"
-#include "Registro.h"
+#include "Venta.h"
 ////////////////////////////////////////////////////////////////////////////////// PARSER CSV
-int parser_registerFromText(FILE* pFile ,LinkedList* listaRegistro){
+int parser_ElementFromText(FILE* pFile ,LinkedList* this){
     int auxReturn = -1;
     int r= 0;
-    int employeeCount=0;
-    char var1[50],var3[50],var2[50],var4[50];
-    Employee* pxEmployee =NULL;
+    int counter=0;
+    char var1[50],var3[50],var2[50],var4[50],var5[50],var6[50];
+    Element* auxPelement =NULL;
 
-    r = fscanf(pFile,"%[^,],%[^,],%[^\n]\n",var1,var2,var3);
+    r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4,var5,var6);
     do
     {
-        r = fscanf(pFile,"%[^,],%[^,],%[^\n]\n",var1,var2,var3);
-        if(r==3)
+        r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4,var5,var6);
+        if(r==6)
         {
-            pxEmployee = employee_newParametros(var1,var2,var3,var4);
-            if(pxEmployee!=NULL)
+            auxPelement = element_newParametros(var1,var2,var3,var4,var5,var6);
+            if(auxPelement!=NULL)
             {
-                ll_add(listaEmpleados,pxEmployee);
-                employeeCount++;
+                ll_add(this,auxPelement);
+                counter++;
                 auxReturn=0;
             }
             else

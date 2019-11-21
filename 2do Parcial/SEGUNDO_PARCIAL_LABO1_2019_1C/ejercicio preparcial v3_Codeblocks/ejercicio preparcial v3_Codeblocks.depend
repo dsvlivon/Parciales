@@ -71,3 +71,86 @@
 	"validations.h"
 	"Empleado.h"
 
+1574361291 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"Empleado.h"
+	"validations.h"
+
+1574361291 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\empleado.h
+
+1574373205 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\validations.h
+
+1574361292 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1574361291 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\menu.h
+
+1574373844 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Venta.h"
+
+1574361291 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\linkedlist.h
+
+1574374845 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\venta.h
+
+1574376541 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"Menu.h"
+	"LinkedList.h"
+	"Controller.h"
+	"validations.h"
+	"Venta.h"
+
+1574375813 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\controller.h
+
+1574374168 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"parser.h"
+	"Venta.h"
+
+1574371202 c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\parser.h
+
+1574376446 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Controller.h"
+	"Venta.h"
+	"validations.h"
+
+1574375647 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\venta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"Venta.h"
+	"validations.h"
+
+1574373681 source:c:\users\daniel\documents\dany\utn\programacion_1\biblioteca\parciales\2do parcial\segundo_parcial_labo1_2019_1c\ejercicio preparcial v3_codeblocks\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validations.h"
+
